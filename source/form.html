@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page-body">
@@ -17,17 +18,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a href="catalog.html">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a>
               Конкурс
             </a>
           </li>
@@ -45,70 +46,86 @@
   </section>
 
   <form action="" class="user-request">
-    <h2 class="user-request__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-      бонусную карту!</h2>
-    <div class="user-reqest__presentation presentation">
-      <div class="presentation__wrapper">
-        <label for="surname">Фамилия</label>
-        <input type="text" id="surname" placeholder="Укажите фамилию *">
+      <h2 class="user-request__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту!</h2>
+      <div class="user-reqest__presentation presentation">
+        <div class="presentation__wrapper">
+          <label for="surname">Фамилия</label>
+          <input type="text" id="surname" placeholder="Укажите фамилию *">
+        </div>
+        <div class="presentation__wrapper">
+          <label for="name">Имя</label>
+          <input type="text" id="name" placeholder="Введите ваше имя *">
+        </div>
+        <div class="presentation__wrapper">
+          <label for="patronymic">Отчество</label>
+          <input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+        </div>
       </div>
-      <div class="presentation__wrapper">
-        <label for="name">Имя</label>
-        <input type="text" id="name" placeholder="Введите ваше имя *">
+      <div class="user-request__achievements achievements">
+        <h3 class="achievements__title">Ваши безбашенные достижения в путешествии</h3>
+        <div class="achievements__wrapper">
+          <input type="checkbox" id="shark" checked>
+          <label for="shark">Сделал селфи с акулой</label>
+        </div>
+        <div class="achievements__wrapper">
+          <input type="checkbox" id="beach" checked>
+          <label for="beach">Обгорел на пляже</label>
+        </div>
+        <div class="achievements__wrapper">
+          <input type="checkbox" id="Chuck">
+          <label for="Chuck">Видел Чака Норриса</label>
+        </div>
+        <div class="achievements__wrapper">
+          <input type="checkbox" id="presents">
+          <label for="presents">Накупил сувениров</label>
+        </div>
+        <div class="achievements__wrapper">
+          <input type="checkbox" id="tower">
+          <label for="tower">Удержал башню</label>
+        </div>
+        <div class="achievements__wrapper">
+          <input type="checkbox" id="hotel">
+          <label for="hotel">Разгромил отель</label>
+        </div>
       </div>
-      <div class="presentation__wrapper">
-        <label for="patronymic">Отчество</label>
-        <input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+
+      <div class="user-reqest__contacts user-contacts">
+        <div class="user-contacts__wrapper">
+          <label for="tel">НОМЕР ТЕЛЕФОНА</label>
+          <input type="tel" id="tel" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="user-contacts__wrapper">
+          <label for="email">АДРЕС ПОЧТЫ</label>
+          <input type="email" id="email" placeholder="Введите почту *">
+        </div>
       </div>
-    </div>
-    <div class="user-request__achievements achievements">
-      <h3 class="achievements__title">Ваши безбашенные достижения в путешествии</h3>
-      <div class="achievements__wrapper">
-        <input type="checkbox" id="shark" checked>
-        <label for="shark">Сделал селфи с акулой</label>
+
+      <div class="user-request__app app">
+        <h3 class="app__title">Ваши безбашенные достижения в путешествии</h3>
+        <div class="app__wrapper">
+          <input type="radio" id="IOS" name="OS">
+          <label for="IOS">Pink для iOS</label>
+        </div>
+        <div class="app__wrapper">
+          <input type="radio" id="android" name="OS">
+          <label for="android">Pink на Android</label>
+        </div>
+        <div class="app__wrapper">
+          <input type="radio" id="windows" name="OS">
+          <label for="windows">Windows Phone</label>
+        </div>
       </div>
-      <div class="achievements__wrapper">
-        <input type="checkbox" id="beach" checked>
-        <label for="beach">Обгорел на пляже</label>
+      <div class="user-request__emotions emotions">
+        <h3 class="emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+        <textarea class="emotions__text" name="emotion" id="emotion" cols="30"
+          rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
       </div>
-      <div class="achievements__wrapper">
-        <input type="checkbox" id="Chuck">
-        <label for="Chuck">Видел Чака Норриса</label>
+      <div class="container">
+        <button type="submit" class="user-request__submit">Отправить форму</button>
+        <span class="user-request__label">* — обязательные поля</span>
       </div>
-      <div class="achievements__wrapper">
-        <input type="checkbox" id="presents">
-        <label for="presents">Накупил сувениров</label>
-      </div>
-      <div class="achievements__wrapper">
-        <input type="checkbox" id="tower">
-        <label for="tower">Удержал башню</label>
-      </div>
-      <div class="achievements__wrapper">
-        <input type="checkbox" id="hotel">
-        <label for="hotel">Разгромил отель</label>
-      </div>
-    </div>
-    <div class="user-request__app app">
-      <h3 class="app__title">Ваши безбашенные достижения в путешествии</h3>
-      <div class="app__wrapper">
-        <input type="radio" id="IOS" name="OS">
-        <label for="IOS">Pink для iOS</label>
-      </div>
-      <div class="app__wrapper">
-        <input type="radio" id="android" name="OS">
-        <label for="android">Pink на Android</label>
-      </div>
-      <div class="app__wrapper">
-        <input type="radio" id="windows" name="OS">
-        <label for="windows">Windows Phone</label>
-      </div>
-    </div>
-    <div class="user-request__emotions emotions">
-      <h3 class="emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
-      <textarea name="emotion" id="emotion" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-    </div>
-    <button type="submit" class="user-request__submit">Отправить форму</button>
-    <span class="user-request__label">* — обязательные поля</span>
+      
   </form>
 
   <footer class="page-footer">
