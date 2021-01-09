@@ -1,0 +1,142 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 121px;
+  background-image: url(../../img/grey-background.png);
+  background-repeat: no-repeat;
+  background-position: 0 -29px;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+
+.price__wrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -531px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.price__col {
+  min-width: 274px;
+  margin-left: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+  outline: 2px solid @bg-grey;
+}
+
+.price__header {
+  min-height: 98px;
+  padding-top: 12px;
+  background-color: @menu-bg;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
+  span {
+    font-weight: @light;
+    font-size: 18px;
+  }
+}
+
+.price__item {
+  margin-bottom: -2px;
+  box-sizing: border-box;
+  padding: 17px 18px;
+  border-bottom: 2px solid @bg-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__description {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.price__icon {
+  width: 31px;
+  height: 27px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price__icon--yes {
+  background-image: url(../../img/svg/yes.svg);
+}
+
+.price__icon--no {
+  background-image: url(../../img/svg/no.svg);
+}
+
+.price__toggles {
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet) {
+  .price {
+    background-position: 0px -86px;
+    padding-top: 96px;
+    padding-bottom: 36px;
+  }
+
+  .price__wrapper {
+    left: 0;
+    padding: 0 20px;
+  }
+
+  .price__col {
+    min-width: auto;
+    width: 25%;
+
+    &:first-child {
+      .price__header {
+        background-color: @bg-grey;
+      }
+
+      .price__description {
+        display: inline;
+      }
+
+      .price__icon {
+        display: none;
+      }
+    }
+  }
+
+  .price__description {
+    display: none;
+    font-size: 14px;
+    text-transform: none;
+  }
+
+  .price__item {
+    height: 45px;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .price {
+    padding-bottom: 195px;
+  }
+}

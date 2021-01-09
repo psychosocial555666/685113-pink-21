@@ -21,3 +21,28 @@
 }
 
 @media (min-width: @tablet) {}
+
+@media (min-width: @desktop) {
+
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    padding-top: 17px;
+    width: 100%;
+  }
+
+  .site-list__item {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    a {
+      font-weight: @light;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}

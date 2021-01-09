@@ -1,19 +1,23 @@
 .app {
-  padding: 0 20px;
+  padding: 39px 20px 5px;
   background-color: @bg-grey;
 }
 
 .app__title {
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 18px;
   font-weight: 400;
   text-align: center;
   color: @pink-text;
+  margin: 0;
+  padding: 0 20px;
+  margin-bottom: 35px;
 }
 
 .app__wrapper {
-  padding: 31px 0;
+  padding: 7px 0;
+  margin-bottom: 37px;
 
   input {
     display: none;
@@ -21,6 +25,74 @@
 
   label {
     font-size: 18px;
-    padding-left: 68px;
+    padding-left: 70px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 37px;
+      top: -8px;
+      left: 0;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 2px solid #E5E5E5;
+    }
+  }
+
+  input[type=radio]:checked+label {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 5px;
+      left: 13px;
+      border-radius: 50%;
+      background: @pink-text;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .app {
+    order: 0;
+    background-color: transparent;
+    border: 2px solid #E5E5E5;
+    border-radius: 3px;
+    position: relative;
+    padding: 53px 58px 18px;
+    margin-bottom: 65px;
+  }
+
+  .app__title {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    min-width: 60%;
+  }
+
+  .app__wrapper {
+    label {
+      padding-left: 61px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .app {
+    width: 46.3%;
+    box-sizing: border-box;
+    padding: 55px 72px 18px;
+  }
+
+  .app__title {
+    min-width: 85%;
   }
 }

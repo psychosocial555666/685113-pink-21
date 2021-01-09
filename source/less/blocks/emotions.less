@@ -1,21 +1,68 @@
 .emotions {
-  padding: 0 20px;
+  padding: 38px 20px 44px;
   box-sizing: border-box;
 }
 
 .emotions__title {
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 18px;
   font-weight: 400;
   text-align: center;
   color: @pink-text;
+  margin: 0;
+  margin-bottom: 16px;
+
 }
+
 .emotions__text {
-  padding: 20px;
+  padding: 13px 20px 3px;
   width: 100%;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 30px;
   resize: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 3px;
+}
+
+@media (min-width: @tablet) {
+  .emotions {
+    order: 2;
+    background-color: transparent;
+    border: 2px solid #E5E5E5;
+    border-radius: 3px;
+    position: relative;
+    padding: 47px 58px 46px;
+    margin-bottom: 65px;
+  }
+
+  .emotions__title {
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    min-width: 42%;
+  }
+
+  .emotions__text {
+    height: 192px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .emotions {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 42px 58px 39px;
+  }
+
+  .emotions__text {
+    height: 127px;
+  }
 }
