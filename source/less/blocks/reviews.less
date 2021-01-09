@@ -1,7 +1,15 @@
 .reviews {
+  position: relative;
   display: flex;
-  padding: 50px 0;
+  padding: 44px 0 0;
+  margin-top: -42px;
+  background-color: white;
 }
+
+.reviews__item--hidden {
+  display: none;
+}
+
 .reviews__wrapper {
   display: flex;
   flex-direction: column;
@@ -22,6 +30,7 @@
 .reviews__author-name {
   font-size: 18px;
   font-weight: @bold;
+  font-style: normal;
 }
 
 .reviews__author-about {
@@ -29,44 +38,92 @@
 }
 
 .reviews__text {
+  padding: 0;
+  margin: 0;
+  margin: 16px 0;
   font-size: 14px;
   line-height: 30px;
 }
 
 @media (min-width: @tablet) {
-  .reviews__author-name {
-    font-size: 20px;
-    line-height: 30px;
+  .reviews {
+    margin-top: 0;
+    padding-top: 6px;
+    background: url(../../img/quotes.png) top 72px center no-repeat;
   }
-  
-  .reviews__author-about {
-    display: block;
-    font-size: 14px;
-  }
-  
-  .reviews__text {
-    font-size: 18px;
-  }
-}
 
-@media (min-width: @tablet) {
+  .reviews__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
   .reviews__author-name {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 4px;
   }
-  
+
   .reviews__author-about {
     display: block;
     font-size: 14px;
+    margin-bottom: 26px;
   }
-  
+
   .reviews__text {
     font-size: 18px;
+    order: -1;
+    margin-bottom: 36px;
   }
 }
 
 @media (min-width: @desktop) {
+  .reviews {
+    padding: 169px 130px 0;
+    justify-content: space-between;
+  }
+
+  .reviews__list {
+    display: flex;
+  }
+
+  .reviews__item {
+    order: 1;
+  }
+
+  .reviews__text {
+    padding: 0 65px;
+  }
+
   .reviews__author-about {
     font-size: 18px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__button {
+    display: block;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 45px;
+    margin: 0;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+  }
+
+  .reviews__button--prev {
+    order: 0;
+  }
+
+  .reviews__button--next {
+    order: 2;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }

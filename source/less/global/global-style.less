@@ -3,28 +3,35 @@ body {
   padding: 0;
   font-family: @main-font;
 }
+
 input {
   font-family: @main-font;
 }
+
 button {
   font-family: @main-font;
 }
+
 textarea {
   font-family: @main-font;
   overflow: hidden;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
 input[type="number"]:hover,
 input[type="number"]:focus {
   -moz-appearance: number-input;
 }
+
 input[type="file"] {
   display: none;
 }
@@ -44,4 +51,70 @@ input[type="file"] {
 
 .closed {
   display: none;
+}
+
+.input-field {
+  font-size: 18px;
+  padding: 17px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.input-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-left: 23px;
+  color: @pink-text;
+}
+
+.mobile-only {
+  display: block;
+}
+
+.tablet-only {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .input-field {
+    flex-grow: 1;
+  }
+
+  .input-label {
+
+    padding-left: 0;
+    margin-right: 19px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
 }

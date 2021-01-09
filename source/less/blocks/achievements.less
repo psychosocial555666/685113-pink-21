@@ -1,19 +1,27 @@
 .achievements {
   background-color: @bg-grey;
-  padding: 0 20px;
+  padding: 39px 20px 43px;
 }
 
 .achievements__title {
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 18px;
   font-weight: 400;
   text-align: center;
   color: @pink-text;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0 20px;
 }
 
 .achievements__wrapper {
-  padding: 24px 0;
+  padding: 6px 0;
+  margin-bottom: 46px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   input {
     display: none;
@@ -21,6 +29,62 @@
 
   label {
     font-size: 18px;
-    padding-left: 57px;
+    padding-left: 59px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+      border: 2px solid #E5E5E5;
+      border-radius: 1px;
+    }
+  }
+
+  input[type=checkbox]:checked + label {
+    &::before {
+      background: url(../../img/svg/tick.svg) top 9px left 7px no-repeat;
+      background-color: #fff;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .achievements {
+    order: 2;
+    background-color: transparent;
+    border: 2px solid #E5E5E5;
+    border-radius: 3px;
+    position: relative;
+    padding: 53px 58px 50px;
+    margin-bottom: 65px;
+  }
+
+  .achievements__title {
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    min-width: 70%;
+  }
+}
+
+@media (min-width: @tablet) {
+  .achievements {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 53px 58px 58px;
   }
 }

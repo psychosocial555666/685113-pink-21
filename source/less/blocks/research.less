@@ -1,0 +1,65 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .research {
+    margin-top: -43px;
+    padding: 97px 20px 100px 330px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: url(../../img/clock.png) no-repeat top 55px left 20px;
+    background-color: white;
+  }
+
+  .research__title {
+    font-weight: @bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .research__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .research__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: @pink-text;
+
+  }
+}
+
+@media (min-width: @desktop) {
+  .research {
+    margin-top: 0px;
+    padding: 122px 160px 111px 500px;
+    background: url(../../img/clock-desktop.png) no-repeat top 27px left 132px;
+    background-color: @bg-grey;
+  }
+
+  .research__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 31px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

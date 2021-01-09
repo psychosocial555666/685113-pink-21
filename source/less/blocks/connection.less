@@ -1,0 +1,86 @@
+.connection__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.connection__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  font-weight: @light;
+  font-size: 24px;
+  line-height: 33px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.connection__email {
+  margin-bottom: 22px;
+}
+
+.connection__adress {
+  margin-bottom: 34px;
+}
+
+@media (min-width: @tablet) {
+  .connection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .connection__item {
+    width: 50%;
+    margin-bottom: 21px;
+  }
+
+  .connection__title {
+    margin-bottom: 3px;
+  }
+
+  .connection__adress {
+    margin-bottom: 0;
+  }
+} 
+
+@media (min-width: @desktop) {
+  .connection {
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0 160px 0 130px;
+    box-sizing: border-box;
+  }
+
+  .connection__title {
+    margin-bottom: 21px;
+  }
+
+  .connection__item {
+    width: auto;
+    margin-bottom: 21px;
+  }
+
+  .connection__item--call {
+    order: 0;
+    margin-left: 47px;
+    margin-right: 112px;
+  }
+
+  .connection__item--write {
+    order: 2;
+  }
+
+  .connection__item--come {
+    order: 1;
+    margin-right: 94px;
+  }
+}

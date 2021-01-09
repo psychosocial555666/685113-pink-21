@@ -19,6 +19,7 @@
   &:last-child {
     img {
       display: block;
+      margin-top: 10px;
     }
   }
 }
@@ -35,13 +36,41 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  padding: 18px 0 40px;
+  padding: 13px 0 30px;
   margin: 0;
 
 }
 
 @media (min-width: @tablet) {
+  .advantages {
+    align-items: end;
+    padding-left: 310px;
+  }
 
+  .advantages__item {
+    align-items: start;
+    position: relative;
+
+    img {
+      width: 268px;
+      height: 547px;
+    }
+
+    &:last-child {
+      img {
+        display: block;
+        position: absolute;
+        margin-top: 0;
+        top: -356px;
+        left: -310px;
+      }
+    }
+  }
+
+  .advantages__description {
+    text-align: left;
+    padding: 13px 0 34px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -49,14 +78,32 @@
   .advantages {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
   }
   
   .advantages__item {
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+
     img {
       display: block;
-      width: 157px;
+      width: 300px;
+      height: 382px;
+      order: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      img {
+        display: block;
+        position: static;
+        margin-top: 0;
+        top: auto;
+        left: auto;
+      }
     }
   }
 
@@ -64,10 +111,18 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: auto;
+    order: 1;
+    background-color: @bg-grey;
+    padding: 55px 30px 23px;
+    margin-top: -80px;
   }
 
   .advantages__description {
     font-size: 18px;
-    padding: 30px 0 40px;
+    line-height: 30px;
+    padding: 0px 24px 40px;
+    text-align: center;
+    order: 2;
+    background-color: @bg-grey;
   }
 }
