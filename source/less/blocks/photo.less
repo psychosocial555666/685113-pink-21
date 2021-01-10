@@ -1,11 +1,19 @@
 .photo {
+  margin-bottom: 20px;
+
   img {
     width: 100%;
+    display: block;
   }
+}
+
+.photo__container {
+  padding: 0 20px;
 }
 
 .photo__wrapper {
   background-color: @bg-grey;
+  padding: 18px 10px 0 18px;
 }
 
 .photo__user {
@@ -16,7 +24,15 @@
 .photo__name {
   padding: 0;
   margin: 0;
+  margin-right: 3px;
+  margin-bottom: 1px;
   font-weight: @bold;
+  line-height: 24px;
+}
+
+.photo__description {
+  margin: 0;
+  padding: 0;
 }
 
 .photo__time {
@@ -25,9 +41,131 @@
   font-weight: @light;
 }
 
+.photo__controls {
+  display: flex;
+  padding-top: 11px;
+  padding-bottom: 18px;
+}
+
 .photo__like {
   color: @pink-text;
   text-transform: uppercase;
   padding-left: 30px;
   font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.photo__heart {
+  padding: 0;
+  margin: 0;
+  margin-right: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: @tablet) {
+  .photo {
+    width: 48.4%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      height: 300px;
+    }
+  }
+
+  .photo__wrapper {
+    padding: 23px 12px 4px 30px;
+    box-sizing: border-box;
+    min-height: 155px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .photo__controls {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    padding-top: 12px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .photo--panorama {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    img {
+      height: 509px;
+    }
+
+    .photo__wrapper {
+      display: flex;
+      flex-direction: row;
+      min-height: auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 23px 30px 25px 30px;
+    }
+
+    .photo__user {
+      order: 0;
+    }
+
+    .photo__controls {
+      order: 0;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      width: auto;
+      position: relative;
+      top: 2px;
+    }
+
+    .photo__heart {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+
+    .photo__description {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+
+  .photo {
+    width: 32%;
+    margin-bottom: 54px;
+    img {
+      height: 400px;
+    }
+  }
+
+  .photo__wrapper {
+    padding: 24px 14px 4px 27px;
+  }
+
+  .photo--panorama {
+    margin-bottom: 48px;
+    width: 100%;
+    img {
+      height: 506px;
+    }
+
+    .photo__container {
+      padding: 0 130px;
+    }
+
+    .photo__wrapper {
+      padding: 24px 31px 25px 28px;
+    }
+  }
 }
