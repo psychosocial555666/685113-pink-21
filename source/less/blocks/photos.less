@@ -4,16 +4,63 @@
   color: @text-color;
   display: flex;
   flex-direction: column;
+  padding: 44px 0 10px;
 }
 
 .photos__title {
   padding: 0 20px;
+  margin: 0;
+  margin-bottom: 50px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: normal;
   text-align: center;
 }
 
 .photos__card {
   padding: 0 20px;
+}
+
+.photos__card--panorama {
+  padding: 0;
+}
+
+@media (min-width: @tablet) {
+  .photos {
+    padding-top: 91px;
+  }
+
+  .photos__title {
+    padding: 0 50px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 77px;
+  }
+
+  .photos__card {
+    padding: 0;
+  }
+
+  .photos__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 20px;
+  }
+}
+
+
+@media (min-width: @desktop) {
+  .photos {
+    padding-bottom: 4px;
+  }
+
+  .photos__title {
+    margin-bottom: 89px;
+  }
+
+  .photos__wrapper {
+    padding: 0 130px;
+  }
 }
