@@ -11,7 +11,11 @@
 <body class="page-body inner-page">
   <header class="page-header page-header__menu-closed">
     <a class="page-header__logo">
-      <img src="./img/pink.png" width="74" height="23" alt="Pink">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logotype-white-desktop.png 1x, ./img/logotype-white-desktop@2x.png 2x">
+        <source media="(min-width: 660px)" srcset="./img/logotype-white-tablet.png 1x, ./img/logotype-white-tablet@2x.png 2x">
+          <img src="./img/pink.png" srcset="./img/pink@2x.png 2x" alt="Pink">
+      </picture>
     </a>
     <nav class="main-nav main-nav__closed">
       <button class="main-nav__toggle" type="button">
@@ -141,7 +145,10 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img src="./img/logotype-blue-tablet.png" width="145" height="40" alt="Pink">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logotype-blue-dektop.png 1x, ./img/logotype-blue-desktop@2x.png 2x">
+          <img src="./img/logotype-blue-tablet.png" srcset="./img/logotype-blue-tablet@2x.png 2x" alt="Pink">
+      </picture>
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -190,7 +197,6 @@
     </div>
     </div>
   </footer>
-
 </body>
 
 </html>

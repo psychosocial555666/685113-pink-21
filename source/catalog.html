@@ -11,7 +11,13 @@
 <body class="page-body inner-page">
     <header class="page-header page-header__menu-closed">
         <a class="page-header__logo">
-            <img src="./img/pink.png" width="74" height="23" alt="Pink">
+            <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="./img/logotype-white-desktop.png 1x, ./img/logotype-white-desktop@2x.png 2x">
+                <source media="(min-width: 660px)"
+                    srcset="./img/logotype-white-tablet.png 1x, ./img/logotype-white-tablet@2x.png 2x">
+                <img src="./img/pink.png" srcset="./img/pink@2x.png 2x" alt="Pink">
+            </picture>
         </a>
         <nav class="main-nav main-nav__closed">
             <button class="main-nav__toggle" type="button">
@@ -52,7 +58,15 @@
             <br class="mobile-only"> <br class="desktop-only"> Видите, как не хватает ваших?
         </h2>
         <article class="photos__card photos__card--panorama photo photo--panorama">
-            <img src="./img/panorama-mobile.jpg" class="photo__image" alt="">
+            <div class="photo__image">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./img/panorama-desktop.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)"
+                        srcset="./img/panorama-tablet.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+                    <img src="./img/panorama-mobile.jpg" srcset="./img/panorama-mobile@2x.jpg 2x">
+                </picture>
+            </div>
             <div class="photo__container">
                 <div class="photo__wrapper">
                     <div class="photo__user">
@@ -83,7 +97,15 @@
 
         <div class="photos__wrapper">
             <article class="photos__card photo">
-                <img src="./img/photo-1-mobile.jpg" class="photo__image" alt="">
+                <div class="photo__image">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./img/photo-1-desktop.jpg 1x, ./img/photo-1-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)"
+                            srcset="./img/photo-1-tablet.jpg 1x, ./img/photo-1-tablet@2x.jpg 2x">
+                        <img src="./img/photo-1-mobile.jpg" srcset="./img/photo-1-mobile@2x.jpg 2x">
+                    </picture>
+                </div>
                 <div class="photo__wrapper">
                     <div class="photo__user">
                         <p class="photo__name">Левон</p>
@@ -106,7 +128,15 @@
                 </div>
             </article>
             <article class="photos__card photo">
-                <img src="./img/photo-2-mobile.jpg" class="photo__image" alt="">
+                <div class="photo__image">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./img/photo-2-desktop.jpg 1x, ./img/photo-2-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)"
+                            srcset="./img/photo-2-tablet.jpg 1x, ./img/photo-2-tablet@2x.jpg 2x">
+                        <img src="./img/photo-2-mobile.jpg" srcset="./img/photo-2-mobile@2x.jpg 2x">
+                    </picture>
+                </div>
                 <div class="photo__wrapper">
                     <div class="photo__user">
                         <p class="photo__name">Антон</p>
@@ -129,7 +159,15 @@
                 </div>
             </article>
             <article class="photos__card photo">
-                <img src="./img/photo-3-tablet.jpg" class="photo__image" alt="">
+                <div class="photo__image">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./img/photo-3-desktop.jpg 1x, ./img/photo-3-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)"
+                            srcset="./img/photo-3-tablet.jpg 1x, ./img/photo-3-tablet@2x.jpg 2x">
+                        <img src="./img/photo-3-mobile.jpg" srcset="./img/photo-3-mobile@2x.jpg 2x">
+                    </picture>
+                </div>
                 <div class="photo__wrapper">
                     <div class="photo__user">
                         <p class="photo__name">Борис</p>
@@ -152,7 +190,15 @@
                 </div>
             </article>
             <article class="photos__card photo">
-                <img src="./img/photo-4-tablet.jpg" class="photo__image" alt="">
+                <div class="photo__image">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./img/photo-4-desktop.jpg 1x, ./img/photo-4-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)"
+                            srcset="./img/photo-4-tablet.jpg 1x, ./img/photo-4-tablet@2x.jpg 2x">
+                        <img src="./img/photo-4-mobile.jpg" srcset="./img/photo-4-mobile@2x.jpg 2x">
+                    </picture>
+                </div>
                 <div class="photo__wrapper">
                     <div class="photo__user">
                         <p class="photo__name">Сергей</p>
@@ -175,7 +221,15 @@
                 </div>
             </article>
             <article class="photos__card photo">
-                <img src="./img/photo-5-tablet.jpg" class="photo__image" alt="">
+                <div class="photo__image">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./img/photo-5-desktop.jpg 1x, ./img/photo-5-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)"
+                            srcset="./img/photo-5-tablet.jpg 1x, ./img/photo-5-tablet@2x.jpg 2x">
+                        <img src="./img/photo-5-mobile.jpg" srcset="./img/photo-5-mobile@2x.jpg 2x">
+                    </picture>
+                </div>
                 <div class="photo__wrapper">
                     <div class="photo__user">
                         <p class="photo__name">Максим</p>
@@ -198,7 +252,15 @@
                 </div>
             </article>
             <article class="photos__card photo">
-                <img src="./img/photo-6-tablet.jpg" class="photo__image" alt="">
+                <div class="photo__image">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                            srcset="./img/photo-6-desktop.jpg 1x, ./img/photo-6-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)"
+                            srcset="./img/photo-6-tablet.jpg 1x, ./img/photo-6-tablet@2x.jpg 2x">
+                        <img src="./img/photo-6-mobile.jpg" srcset="./img/photo-6-mobile@2x.jpg 2x">
+                    </picture>
+                </div>
                 <div class="photo__wrapper">
                     <div class="photo__user">
                         <p class="photo__name">Надежда</p>
@@ -228,7 +290,12 @@
             Выкладывайте все, что накопилось в телефоне!
         </h2>
         <div class="user-photo__wrapper">
-            <img src="./img/photo-7-tablet.jpg" alt="" class="user-photo__image">
+            <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="./img/photo-7-desktop.jpg 1x, ./img/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="./img/photo-7-tablet.jpg 1x, ./img/photo-7-tablet@2x.jpg 2x">
+                <img src="./img/photo-7-mobile.jpg" srcset="./img/photo-7-mobile@2x.jpg 2x" class="user-photo__image">
+            </picture>
             <div class="user-photo__container">
                 <div class="user-photo__filters">
                     <div class="user-photo__filter filter">
@@ -298,7 +365,11 @@
     </section>
     <footer class="page-footer">
         <a class="page-footer__logo">
-            <img src="./img/logotype-blue-tablet.png" width="145" height="40" alt="Pink">
+            <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="./img/logotype-blue-dektop.png 1x, ./img/logotype-blue-desktop@2x.png 2x">
+                <img src="./img/logotype-blue-tablet.png" srcset="./img/logotype-blue-tablet@2x.png 2x" alt="Pink">
+            </picture>
         </a>
         <div class="page-footer__social social">
             <ul class="social__list">

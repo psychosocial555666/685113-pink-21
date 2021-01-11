@@ -12,7 +12,11 @@
 
   <header class="page-header page-header__menu-closed">
     <a class="page-header__logo">
-      <img src="./img/pink.png" width="74" height="23" alt="Pink">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logotype-white-desktop.png 1x, ./img/logotype-white-desktop@2x.png 2x">
+        <source media="(min-width: 660px)" srcset="./img/logotype-white-tablet.png 1x, ./img/logotype-white-tablet@2x.png 2x">
+          <img src="./img/pink.png" srcset="./img/pink@2x.png 2x" alt="Pink">
+      </picture>
     </a>
     <nav class="main-nav main-nav__closed">
       <button class="main-nav__toggle" type="button">
@@ -88,21 +92,30 @@
           <h3 class="advantages__title">Поднимает настроение</h3>
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
-          <img class="advantages__image" src="./img/advantage-desktop-1.png" alt="" class="advantage__image">
-        </li>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/advantage-1-desktop.png 1x, ./img/advantage-1-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="./img/advantage-1-tablet.png 1x, ./img/advantage-1-tablet@2x.png 2x">
+                <img src="./img/advantage-1-mobile.png" srcset="./img/advantage-1-mobile@2x.png 2x" class="advantage__image">
+            </picture>        </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
             <br class="tablet-only"> усилить эффект
           </p>
-          <img class="advantages__image" src="./img/advantage-desktop-2.png" alt="" class="advantage__image">
-        </li>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/advantage-2-desktop.png 1x, ./img/advantage-2-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="./img/advantage-2-tablet.png 1x, ./img/advantage-2-tablet@2x.png 2x">
+              <img src="./img/advantage-2-mobile.png" srcset="./img/advantage-2-mobile@2x.png 2x" class="advantage__image">
+          </picture>        </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
-          <img class="advantages__image" src="./img/advantage-desktop-3.png" alt="" class="advantage__image">
-          <!-- <img class="advantages__image" src="./img/advantage-3.png" alt="" class="advantage__image"> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/advantage-3-desktop.png 1x, ./img/advantage-3-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="./img/advantage-3-tablet.png 1x, ./img/advantage-3-tablet@2x.png 2x">
+              <img src="./img/advantage-3-mobile.png" srcset="./img/advantage-3-mobile@2x.png 2x" class="advantage__image">
+          </picture>
         </li>
       </ul>
     </div>
@@ -285,7 +298,10 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img src="./img/logotype-blue-tablet.png" width="145" height="40" alt="Pink">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logotype-blue-dektop.png 1x, ./img/logotype-blue-desktop@2x.png 2x">
+          <img src="./img/logotype-blue-tablet.png" srcset="./img/logotype-blue-tablet@2x.png 2x" alt="Pink">
+      </picture>
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
