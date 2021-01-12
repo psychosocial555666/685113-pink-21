@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   img {
     display: none;
     width: 157px;
@@ -38,7 +39,6 @@
   text-align: center;
   padding: 15px 0 32px;
   margin: 0;
-
 }
 
 @media (min-width: @tablet) {
@@ -69,12 +69,11 @@
 
   .advantages__description {
     text-align: left;
-    padding: 14px 0 37px
+    padding: 14px 0 37px;
   }
 }
 
 @media (min-width: @desktop) {
-
   .advantages {
     display: flex;
     flex-direction: row;
@@ -82,7 +81,7 @@
     justify-content: space-between;
     padding: 0;
   }
-  
+
   .advantages__item {
     justify-content: flex-start;
     align-items: center;
@@ -97,6 +96,7 @@
 
     &:last-child {
       margin-right: 0;
+
       img {
         display: block;
         position: static;
@@ -120,7 +120,7 @@
   .advantages__description {
     font-size: 18px;
     line-height: 30px;
-    padding: 0px 24px 40px;
+    padding: 0 24px 40px;
     text-align: center;
     order: 2;
     background-color: @bg-grey;

@@ -299,36 +299,36 @@ template {
   display: none;
 }
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: 300;
   font-style: light;
-  src: url(../fonts/opensanslight.woff2) format('woff2'), url(../fonts/opensanslight.woff) format('woff');
+  src: url(../fonts/opensanslight.woff2) format("woff2"), url(../fonts/opensanslight.woff) format("woff");
 }
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/opensans.woff2) format('woff2'), url(../fonts/opensans.woff) format('woff');
+  src: url(../fonts/opensans.woff2) format("woff2"), url(../fonts/opensans.woff) format("woff");
 }
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-weight: 700;
   font-style: bold;
-  src: url(../fonts/opensansbold.woff2) format('woff2'), url(../fonts/opensansbold.woff) format('woff');
+  src: url(../fonts/opensansbold.woff2) format("woff2"), url(../fonts/opensansbold.woff) format("woff");
 }
 body {
   margin: 0 auto;
   padding: 0;
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
 }
 input {
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
 }
 button {
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
 }
 textarea {
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   overflow: hidden;
 }
 input[type="number"]::-webkit-outer-spin-button,
@@ -365,7 +365,7 @@ input[type="file"] {
 .input-field {
   font-size: 18px;
   padding: 19px 20px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid@light-grey;
   border-radius: 3px;
   box-sizing: border-box;
   outline: none;
@@ -1360,13 +1360,13 @@ input[type="file"] {
 }
 .user-request__submit:hover,
 .user-request__submit:focus {
-  background-color: #1C9B5E;
+  background-color:#1c9b5e;
 }
 .user-request__submit:active {
   color: rgba(255, 255, 255, 0.3);
 }
 .user-request__submit:disabled {
-  background-color: #E5E5E5;
+  background-color:@light-grey;
 }
 .user-request__label {
   display: block;
@@ -1509,8 +1509,8 @@ input[type="file"] {
   left: 0;
   width: 35px;
   height: 35px;
-  background-color: #fff;
-  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+  border: 2px solid@light-grey;
   border-radius: 3px;
 }
 .achievements__wrapper label:hover::before,
@@ -1522,13 +1522,13 @@ input[type="file"] {
 }
 .achievements__wrapper input[type=checkbox]:checked + label::before {
   background: url(../../img/svg/tick.svg) top 9px left 7px no-repeat;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 @media (min-width: 660px) {
   .achievements {
     order: 2;
     background-color: transparent;
-    border: 2px solid #E5E5E5;
+    border: 2px solid@light-grey;
     border-radius: 3px;
     position: relative;
     padding: 55px 58px 52px;
@@ -1540,7 +1540,7 @@ input[type="file"] {
     top: -9px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 2;
     padding: 0;
     margin: 0;
@@ -1578,7 +1578,7 @@ input[type="file"] {
   .user-contacts {
     order: 1;
     background-color: transparent;
-    border: 2px solid #E5E5E5;
+    border: 2px solid@light-grey;
     border-radius: 3px;
     position: relative;
     padding: 46px 58px 22px;
@@ -1590,7 +1590,7 @@ input[type="file"] {
     top: -9px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 2;
     padding: 0;
     margin: 0;
@@ -1661,8 +1661,8 @@ input[type="file"] {
   top: -8px;
   left: 0;
   border-radius: 50%;
-  background: #FFFFFF;
-  border: 2px solid #E5E5E5;
+  background: #ffffffFFF;
+  border: 2px solid@light-grey;
 }
 .app__wrapper label:hover::before,
 .app__wrapper label:focus::before {
@@ -1685,7 +1685,7 @@ input[type="file"] {
   .app {
     order: 0;
     background-color: transparent;
-    border: 2px solid #E5E5E5;
+    border: 2px solid@light-grey;
     border-radius: 3px;
     position: relative;
     padding: 55px 58px 15px;
@@ -1696,7 +1696,7 @@ input[type="file"] {
     top: -9px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 2;
     padding: 0;
     margin: 0;
@@ -1743,7 +1743,7 @@ input[type="file"] {
   font-size: 18px;
   line-height: 30px;
   resize: none;
-  border: 2px solid #E5E5E5;
+  border: 2px solid@light-grey;
   border-radius: 3px;
   outline: none;
 }
@@ -1757,7 +1757,7 @@ input[type="file"] {
   .emotions {
     order: 2;
     background-color: transparent;
-    border: 2px solid #E5E5E5;
+    border: 2px solid@light-grey;
     border-radius: 3px;
     position: relative;
     padding: 47px 58px 48px;
@@ -1769,7 +1769,7 @@ input[type="file"] {
     top: -9px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 2;
     padding: 0;
     margin: 0;
@@ -1828,7 +1828,7 @@ input[type="file"] {
   padding: 12px 80px;
   padding-bottom: 29px;
   text-align: center;
-  border: 2px solid #E5E5E5;
+  border: 2px solid@light-grey;
   border-bottom: none;
 }
 .price__rate--blank {
@@ -1892,7 +1892,7 @@ input[type="file"] {
   height: 57px;
   padding-left: 20px;
   background-color: white;
-  border: 2px solid #E5E5E5;
+  border: 2px solid@light-grey;
 }
 .price__option--title {
   display: none;
@@ -2431,7 +2431,7 @@ input[type="file"] {
   height: 14px;
   left: 80%;
   top: -6px;
-  background: #FFFFFF;
+  background: #ffffffFFF;
   border: 2px solid #D22856;
   box-sizing: border-box;
   border-radius: 50%;

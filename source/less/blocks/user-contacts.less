@@ -22,7 +22,7 @@
   .user-contacts {
     order: 1;
     background-color: transparent;
-    border: 2px solid #E5E5E5;
+    border: 2px solid@light-grey;
     border-radius: 3px;
     position: relative;
     padding: 46px 58px 22px;
@@ -35,12 +35,13 @@
     top: -9px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 2;
     padding: 0;
     margin: 0;
     min-width: 40%;
   }
+
   .user-contacts__wrapper {
     flex-direction: column-reverse;
     position: relative;
@@ -65,28 +66,29 @@
       margin-bottom: 14px;
       position: relative;
     }
+
     label {
       padding-left: 19px;
       margin-bottom: 15px;
     }
   }
-  .user-contacts__wrapper--tel{
+
+  .user-contacts__wrapper--tel {
     &::before {
-      background: url(../../img/svg/phone-icon.svg) center no-repeat;
+      background: url("../../img/svg/phone-icon.svg") center no-repeat;
       background-color: @light-grey;
     }
   }
 
   .user-contacts__wrapper--email {
     &::before {
-      background: url(../../img/svg/mail-icon.svg) center no-repeat;
+      background: url("../../img/svg/mail-icon.svg") center no-repeat;
       background-color: @light-grey;
     }
   }
 }
 
 @media (min-width: @desktop) {
-
   .user-contacts {
     width: 100%;
     padding: 42px 58px 24px;
@@ -98,6 +100,7 @@
   .user-contacts__wrapper {
     width: 46%;
     margin: 0;
+
     label {
       margin-bottom: 0;
     }

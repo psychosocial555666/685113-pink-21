@@ -17,6 +17,7 @@
 
 .achievements__cover {
   margin-bottom: 50px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -46,12 +47,13 @@
       left: 0;
       width: 35px;
       height: 35px;
-      background-color: #fff;
-      border: 2px solid #E5E5E5;
+      background-color: #ffffff;
+      border: 2px solid@light-grey;
       border-radius: 3px;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       &::before {
         border: 2px solid @text-color;
       }
@@ -64,10 +66,10 @@
     }
   }
 
-  input[type=checkbox]:checked + label {
+  input[type="checkbox"]:checked + label {
     &::before {
-      background: url(../../img/svg/tick.svg) top 9px left 7px no-repeat;
-      background-color: #fff;
+      background: url("../../img/svg/tick.svg") top 9px left 7px no-repeat;
+      background-color: #ffffff;
     }
   }
 }
@@ -76,7 +78,7 @@
   .achievements {
     order: 2;
     background-color: transparent;
-    border: 2px solid #E5E5E5;
+    border: 2px solid@light-grey;
     border-radius: 3px;
     position: relative;
     padding: 55px 58px 52px;
@@ -89,7 +91,7 @@
     top: -9px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 2;
     padding: 0;
     margin: 0;

@@ -39,7 +39,6 @@
 
 .reviews__text {
   padding: 0;
-  margin: 0;
   margin: 18px 0 15px;
   font-size: 14px;
   line-height: 30px;
@@ -79,7 +78,7 @@
   .reviews {
     padding: 167px 130px 0;
     justify-content: space-between;
-    background: url(../../img/quotes.webp) top 72px center no-repeat;
+    background: url("../../img/quotes.webp") top 72px center no-repeat;
   }
 
   .reviews__list {
@@ -103,11 +102,9 @@
   }
 
   .reviews__button {
-    display: block;
     display: flex;
     box-sizing: border-box;
-    padding: 0;
-    padding-top: 45px;
+    padding-top: 45px 0 0 0;
     margin: 0;
     justify-content: center;
     align-items: flex-start;
@@ -120,7 +117,8 @@
       fill: @text-color;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 
