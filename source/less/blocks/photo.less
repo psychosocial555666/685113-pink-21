@@ -24,6 +24,8 @@
 }
 
 .photo--panorama {
+  position: relative;
+
   .photo__image {
     height: 137px;
 
@@ -32,6 +34,21 @@
       width: auto;
       height: 137px;
     }
+  }
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 20px;
+    padding: 6px 20px;
+    background-color: @pink-text;
+    color: white;
+    font-weight: @bold;
+    font-size: 12px;
+    line-height: 24px;
+    z-index: 5;
   }
 }
 
@@ -90,6 +107,7 @@
   margin-right: 18px;
   border: none;
   background-color: transparent;
+
   svg {
     fill: @pink-text;
   }
@@ -137,10 +155,14 @@
 
     .photo__image {
       height: 509px;
-  
+
       img {
         height: 509px;
       }
+    }
+
+    &::before {
+      top: 58px;
     }
 
     .photo__wrapper {
@@ -201,9 +223,13 @@
     margin-bottom: 48px;
     width: 100%;
 
+    &::before {
+      right: 130px;
+    }
+
     .photo__image {
       height: 506px;
-  
+
       img {
         height: 506px;
       }

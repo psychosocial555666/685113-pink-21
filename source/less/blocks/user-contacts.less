@@ -43,6 +43,19 @@
   }
   .user-contacts__wrapper {
     flex-direction: column-reverse;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 59px;
+      height: 58px;
+      top: 2px;
+      right: 2px;
+      background-color: @light-grey;
+      z-index: 5;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -50,10 +63,24 @@
 
     input {
       margin-bottom: 14px;
+      position: relative;
     }
     label {
       padding-left: 19px;
       margin-bottom: 15px;
+    }
+  }
+  .user-contacts__wrapper--tel{
+    &::before {
+      background: url(../../img/svg/phone-icon.svg) center no-repeat;
+      background-color: @light-grey;
+    }
+  }
+
+  .user-contacts__wrapper--email {
+    &::before {
+      background: url(../../img/svg/mail-icon.svg) center no-repeat;
+      background-color: @light-grey;
     }
   }
 }
