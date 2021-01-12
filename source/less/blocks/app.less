@@ -1,5 +1,5 @@
 .app {
-  padding: 39px 20px 5px;
+  padding: 39px 20px 3px;
   background-color: @bg-grey;
 }
 
@@ -12,12 +12,12 @@
   color: @pink-text;
   margin: 0;
   padding: 0 20px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .app__wrapper {
   padding: 7px 0;
-  margin-bottom: 37px;
+  margin-bottom: 41px;
 
   input {
     display: none;
@@ -38,6 +38,18 @@
       border-radius: 50%;
       background: #FFFFFF;
       border: 2px solid #E5E5E5;
+    }
+
+    &:hover, &:focus {
+      &::before {
+        border: 2px solid @text-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        border: 2px solid @pink-text;
+      }
     }
   }
 
@@ -62,7 +74,7 @@
     border: 2px solid #E5E5E5;
     border-radius: 3px;
     position: relative;
-    padding: 53px 58px 18px;
+    padding: 55px 58px 15px;
     margin-bottom: 65px;
   }
 
@@ -89,7 +101,14 @@
   .app {
     width: 46.3%;
     box-sizing: border-box;
-    padding: 55px 72px 18px;
+    padding: 56px 72px 42px;
+  }
+
+  .app__wrapper {
+    margin-bottom: 42px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .app__title {

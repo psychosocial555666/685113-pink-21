@@ -4,6 +4,23 @@
   align-items: center;
 }
 
+.copyright__link {
+  svg {
+    fill: @pink-text;
+  }
+
+  &:hover, &:focus {
+    svg {
+      fill: @text-color;
+    }
+  }
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 18px;

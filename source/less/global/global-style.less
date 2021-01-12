@@ -55,10 +55,19 @@ input[type="file"] {
 
 .input-field {
   font-size: 18px;
-  padding: 17px 20px;
-  border: 2px solid #E5E5E5;
+  padding: 19px 20px;
+  border: 2px solid @light-grey;
   border-radius: 3px;
   box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border: 2px solid @text-color;
+  }
+
+  &:focus {
+    border: 2px solid @pink-text;
+  }
 }
 
 .input-label {
@@ -87,7 +96,6 @@ input[type="file"] {
   }
 
   .input-label {
-
     padding-left: 0;
     margin-right: 19px;
   }
