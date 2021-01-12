@@ -23,6 +23,18 @@
 
 .connection__email {
   margin-bottom: 22px;
+  color: @pink-text;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @text-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .connection__adress {
@@ -49,7 +61,7 @@
   .connection__adress {
     margin-bottom: 0;
   }
-} 
+}
 
 @media (min-width: @desktop) {
   .connection {

@@ -1,6 +1,6 @@
 .achievements {
   background-color: @bg-grey;
-  padding: 39px 20px 43px;
+  padding: 39px 20px 46px;
 }
 
 .achievements__title {
@@ -11,13 +11,20 @@
   text-align: center;
   color: @pink-text;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
   padding: 0 20px;
+}
+
+.achievements__cover {
+  margin-bottom: 50px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .achievements__wrapper {
   padding: 6px 0;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 
   &:last-child {
     margin-bottom: 0;
@@ -41,7 +48,19 @@
       height: 35px;
       background-color: #fff;
       border: 2px solid #E5E5E5;
-      border-radius: 1px;
+      border-radius: 3px;
+    }
+
+    &:hover, &:focus {
+      &::before {
+        border: 2px solid @text-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        border: 2px solid @pink-text;
+      }
     }
   }
 
@@ -60,7 +79,7 @@
     border: 2px solid #E5E5E5;
     border-radius: 3px;
     position: relative;
-    padding: 53px 58px 50px;
+    padding: 55px 58px 52px;
     margin-bottom: 65px;
   }
 
@@ -78,13 +97,13 @@
   }
 }
 
-@media (min-width: @tablet) {
+@media (min-width: @desktop) {
   .achievements {
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 53px 58px 58px;
+    padding: 54px 59px 9px;
   }
 }
