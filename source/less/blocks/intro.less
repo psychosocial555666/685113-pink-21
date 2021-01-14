@@ -1,20 +1,29 @@
 .intro {
-  display: flex;
-  flex-direction: column;
   color: white;
   background:
-    url("../../img/phone-mobile.webp") top 177px left no-repeat,
     url("../../img/back-mobile.webp") top 2px left no-repeat;
-  background-size: 320px 286px, 100%;
+  background-size: 100%;
   background-color: @bg-ultra-dark;
-  padding: 90px 0 0;
 
   @media (min-resolution: 2dppx) {
     background:
-      url("../../img/phone-mobile@2x.webp") top 177px left no-repeat,
       url("../../img/back-mobile@2x.webp") top 2px left no-repeat;
-    background-size: 320px 286px, 100%;
+    background-size: 100%;
     background-color: @bg-ultra-dark;
+  }
+}
+.intro__cover {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0 0;
+  background:
+    url("../../img/phone-mobile.webp") top 177px left no-repeat;
+  background-size: 320px 286px;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../../img/phone-mobile@2x.webp") top 177px left no-repeat;
+    background-size: 320px 286px;
   }
 }
 
@@ -34,7 +43,8 @@
   .intro__title {
     font-size: 24px;
     line-height: 33px;
-    margin-bottom: 44px;
+    margin: 0 auto;
+    padding-bottom: 44px;
   }
 }
 
@@ -85,20 +95,32 @@
 
 @media (min-width: @tablet) {
   .intro {
-    padding-right: 320px;
-    padding-top: 203px;
-    padding-bottom: 72px;
     background:
-      url("../../img/phone-tablet.webp") top 183px left no-repeat,
       url("../../img/back-tablet.webp") top left no-repeat;
-    background-size: 660px 545px, 100%;
+    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background:
-        url("../../img/phone-tablet@2x.webp") top 183px left no-repeat,
         url("../../img/back-tablet@2x.webp") top left no-repeat;
-      background-size: 660px 545px, 100%;
+      background-size: 100%;
       background-color: @bg-ultra-dark;
+    }
+  }
+
+  .intro__cover {
+    padding-right: 320px;
+    padding-top: 203px;
+    padding-bottom: 72px;
+    max-width: 768px;
+    box-sizing: border-box;
+    background:
+      url("../../img/phone-tablet.webp") bottom left no-repeat;
+    background-size: 660px 545px;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        url("../../img/phone-tablet@2x.webp") bottom left no-repeat;
+      background-size: 660px 545px;
     }
   }
 
@@ -122,6 +144,7 @@
       max-width: 100%;
       padding: 0;
       margin-bottom: 44px;
+      max-width: auto;
     }
 
     .intro--catalog {
@@ -152,19 +175,31 @@
 
 @media (min-width: @desktop) {
   .intro {
-    padding-right: 640px;
-    padding-top: 209px;
     background:
-      url("../../img/phone-desktop.webp") top 208px left 146px no-repeat,
       url("../../img/back-desktop.webp") top left no-repeat;
-    background-size: 1050px 645px, 100%;
+    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background:
-        url("../../img/phone-desktop@2x.webp") top 208px left 146px no-repeat,
         url("../../img/back-desktop@2x.webp") top left no-repeat;
-      background-size: 1050px 645px, 100%;
+      background-size: 100%;
       background-color: @bg-ultra-dark;
+    }
+  }
+
+  .intro__cover {
+    padding-right: 640px;
+    padding-top: 209px;
+    max-width: 100%;
+
+    background:
+      url("../../img/phone-desktop.webp") bottom right 3% no-repeat;
+    background-size: 1050px 645px;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        url("../../img/phone-desktop@2x.webp") bottom right 3% no-repeat;
+      background-size: 1050px 645px;
     }
   }
 

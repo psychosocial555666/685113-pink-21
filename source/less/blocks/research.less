@@ -4,9 +4,11 @@
 
 @media (min-width: @tablet) {
   .research {
+    display: block;
+  }
+  .research__wrapper {
     margin-top: -43px;
     padding: 94px 25px 100px 330px;
-    display: block;
     position: relative;
     z-index: 1;
     background: url("../../img/clock.webp") no-repeat top 52px left 20px;
@@ -39,10 +41,12 @@
 
 @media (min-width: @desktop) {
   .research {
+    background-color: @bg-grey;
+  }
+  .research__wrapper {
     margin-top: 0;
     padding: 122px 160px 111px 500px;
     background: url("../../img/clock-desktop.webp") no-repeat top 27px left 132px;
-    background-color: @bg-grey;
   }
 
   .research__title {

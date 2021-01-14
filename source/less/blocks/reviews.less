@@ -76,9 +76,13 @@
 
 @media (min-width: @desktop) {
   .reviews {
-    padding: 167px 130px 0;
+    padding: 167px 0 0;
     justify-content: space-between;
     background: url("../../img/quotes.webp") top 72px center no-repeat;
+  }
+
+  .reviews__wrapper {
+    padding: 0 130px;
   }
 
   .reviews__list {
@@ -104,7 +108,8 @@
   .reviews__button {
     display: flex;
     box-sizing: border-box;
-    padding-top: 45px 0 0 0;
+    padding: 0;
+    padding-top: 45px;
     margin: 0;
     justify-content: center;
     align-items: flex-start;

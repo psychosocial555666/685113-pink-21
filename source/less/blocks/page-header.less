@@ -1,12 +1,15 @@
 .page-header {
+  background-color: @menu-bg;
+  width: 100%;
+}
+
+.page-header__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: @menu-bg;
   padding: 0;
   padding-top: 22px;
   box-sizing: border-box;
-  width: 100%;
 }
 
 .page-header__logo {
@@ -32,9 +35,10 @@
 }
 
 @media (min-width: @tablet) {
-  .page-header {
+  .page-header__wrapper {
     padding-top: 27px;
   }
+
 
   .page-header__logo {
     width: 145px;
@@ -45,11 +49,14 @@
 
 @media (min-width: @desktop) {
   .page-header {
+    background-color: @black-with-opacity;
+    position: absolute;
+  }
+
+  .page-header__wrapper {
     padding: 27px 130px 27px;
     display: flex;
     justify-content: start;
-    background-color: @black-with-opacity;
-    position: absolute;
   }
 
   .page-header__logo {
