@@ -456,7 +456,7 @@ input[type="file"] {
 }
 @media (min-width: 1200px) {
   .page-header {
-    padding: 27px 130px 27px;
+    padding: 27px 10px 27px;
     display: flex;
     justify-content: start;
   }
@@ -730,7 +730,7 @@ input[type="file"] {
     background: url(../../img/back-desktop.webp) top left no-repeat;
     background-size: 100%;
     align-items: center;
-    padding: 169px 130px 45px;
+    padding: 169px 10px 45px;
   }
   .inner-page .intro__title {
     font-size: 50px;
@@ -1115,7 +1115,7 @@ input[type="file"] {
 }
 @media (min-width: 1200px) {
   .reviews {
-    padding: 167px 130px 0;
+    padding: 167px 10px 0;
     justify-content: space-between;
     background: url(../../img/quotes.webp) top 72px center no-repeat;
   }
@@ -1305,7 +1305,7 @@ input[type="file"] {
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
-    padding: 0 160px 0 130px;
+    padding: 0 160px 0 10px;
     box-sizing: border-box;
   }
   .connection__title {
@@ -1412,7 +1412,7 @@ input[type="file"] {
 }
 @media (min-width: 1200px) {
   .user-request {
-    padding: 91px 130px 2px;
+    padding: 91px 10px 2px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -2100,7 +2100,7 @@ input[type="file"] {
     margin-bottom: 89px;
   }
   .photos__wrapper {
-    padding: 0 130px;
+    padding: 0 10px;
   }
 }
 .photo {
@@ -2279,7 +2279,7 @@ input[type="file"] {
     height: 506px;
   }
   .photo--panorama .photo__container {
-    padding: 0 130px;
+    padding: 0 10px;
   }
   .photo--panorama .photo__wrapper {
     padding: 24px 31px 25px 28px;
@@ -2359,7 +2359,7 @@ input[type="file"] {
 }
 @media (min-width: 1200px) {
   .user-photo {
-    padding: 0 130px 0;
+    padding: 0 10px 0;
     margin-bottom: 33px;
   }
   .user-photo__title {
@@ -2540,7 +2540,7 @@ input[type="file"] {
 }
 @media (min-width: 1200px) {
   .page-footer {
-    padding: 68px 130px 76px;
+    padding: 68px 10px 76px;
   }
   .page-footer__logo {
     width: 147px;
@@ -2707,8 +2707,8 @@ input[type="file"] {
 }
 @media (min-width: 1200px) {
   .container {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

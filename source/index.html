@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -13,7 +14,7 @@
   <header class="page-header">
     <div class="container-centred">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
+        <a class="page-header__logo">
           <svg class="logo logo--header" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g class="logo__mobile">
               <path
@@ -116,7 +117,7 @@
           <button class="intro__download button">Скачать приложение</button>
           <ul class="intro__system system">
             <li class="system__item">
-              <a href="" class="system__link system__link--ios">
+              <a href="https://www.apple.com/ru/app-store/" class="system__link system__link--ios">
                 <svg width="47" height="56">
                   <use xlink:href="./img/svg/sprite.svg#ios"></use>
                 </svg>
@@ -124,7 +125,7 @@
               </a>
             </li>
             <li class="system__item">
-              <a href="" class="system__link system__link--android">
+              <a href="https://play.google.com/store/apps?hl=ru&gl=US" class="system__link system__link--android">
                 <svg width="43" height="47">
                   <use xlink:href="./img/svg/sprite.svg#android"></use>
                 </svg>
@@ -132,7 +133,7 @@
               </a>
             </li>
             <li class="system__item">
-              <a href="" class="system__link system__link--windows">
+              <a href="https://www.microsoft.com/ru-ru/store/apps" class="system__link system__link--windows">
                 <svg width="44" height="41">
                   <use xlink:href="./img/svg/sprite.svg#windows"></use>
                 </svg>
@@ -162,8 +163,8 @@
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
             <picture>
-              <img src="./img/advantage-1-desktop.webp" srcset="./img/advantage-1-desktop@2x.webp 2x"
-                class="advantage__image">
+              <img src="./img/advantage-1-desktop.webp" srcset="./img/advantage-1-desktop@2x.webp 2x" alt="Advantage"
+                class="advantages__image">
             </picture>
           </li>
           <li class="advantages__item">
@@ -172,8 +173,8 @@
               <br class="tablet-only"> усилить эффект
             </p>
             <picture>
-              <img src="./img/advantage-2-desktop.webp" srcset="./img/advantage-2-desktop@2x.webp 2x"
-                class="advantage__image">
+              <img src="./img/advantage-2-desktop.webp" srcset="./img/advantage-2-desktop@2x.webp 2x" alt="Advantage"
+                class="advantages__image">
             </picture>
           </li>
           <li class="advantages__item">
@@ -181,12 +182,12 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
             <picture>
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 960px)"
                 srcset="./img/advantage-3-desktop.webp 1x, ./img/advantage-3-desktop@2x.webp 2x">
               <source media="(min-width: 660px)"
                 srcset="./img/advantage-3-tablet.webp 1x, ./img/advantage-3-tablet@2x.webp 2x">
-              <img src="./img/advantage-3-mobile.webp" srcset="./img/advantage-3-mobile@2x.webp 2x"
-                class="advantage__image">
+              <img src="./img/advantage-3-mobile.webp" srcset="./img/advantage-3-mobile@2x.webp 2x" alt="Advantage"
+                class="advantages__image">
             </picture>
           </li>
         </ul>
@@ -337,7 +338,7 @@
     <div class="contacts__map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002949!2d30.320858715957446!3d59.93871916905436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609852386336!5m2!1sru!2sru"
-        width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0"></iframe>
+        style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0"></iframe>
     </div>
   </section>
 
@@ -440,7 +441,7 @@
         </svg>
       </a>
     </div>
-    </div>
+
   </footer>
 
   <script src="./js/script.min.js"></script>

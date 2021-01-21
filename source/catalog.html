@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -115,12 +116,12 @@
       <br class="mobile-only"> <br class="desktop-only"> Видите, как не хватает ваших?
     </h2>
     <article class="photos__card photos__card--panorama photo photo--panorama">
+      <h3 class="visually-hidden">Панорама дня</h3>
       <div class="photo__image">
         <picture>
-          <source media="(min-width: 1200px)"
-            srcset="./img/panorama-desktop.webp 1x, ./img/panorama-desktop@2x.webp 2x">
+          <source media="(min-width: 960px)" srcset="./img/panorama-desktop.webp 1x, ./img/panorama-desktop@2x.webp 2x">
           <source media="(min-width: 660px)" srcset="./img/panorama-tablet.webp 1x, ./img/panorama-tablet@2x.webp 2x">
-          <img src="./img/panorama-mobile.webp" srcset="./img/panorama-mobile@2x.webp 2x">
+          <img src="./img/panorama-mobile.webp" srcset="./img/panorama-mobile@2x.webp 2x" alt="Panorama">
         </picture>
       </div>
       <div class="container-centred">
@@ -153,12 +154,13 @@
     <div class="container-centred">
       <div class="photos__wrapper">
         <article class="photos__card photo">
+          <h3 class="visually-hidden">Фотография пользователя</h3>
           <div class="photo__image">
             <picture>
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 960px)"
                 srcset="./img/photo-1-desktop.webp 1x, ./img/photo-1-desktop@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-1-tablet.webp 1x, ./img/photo-1-tablet@2x.webp 2x">
-              <img src="./img/photo-1-mobile.webp" srcset="./img/photo-1-mobile@2x.webp 2x">
+              <img src="./img/photo-1-mobile.webp" srcset="./img/photo-1-mobile@2x.webp 2x" alt="user-photo">
             </picture>
           </div>
           <div class="photo__wrapper">
@@ -180,12 +182,13 @@
           </div>
         </article>
         <article class="photos__card photo">
+          <h3 class="visually-hidden">Фотография пользователя</h3>
           <div class="photo__image">
             <picture>
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 960px)"
                 srcset="./img/photo-2-desktop.webp 1x, ./img/photo-2-desktop@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-2-tablet.webp 1x, ./img/photo-2-tablet@2x.webp 2x">
-              <img src="./img/photo-2-mobile.webp" srcset="./img/photo-2-mobile@2x.webp 2x">
+              <img src="./img/photo-2-mobile.webp" srcset="./img/photo-2-mobile@2x.webp 2x" alt="user-photo">
             </picture>
           </div>
           <div class="photo__wrapper">
@@ -207,12 +210,13 @@
           </div>
         </article>
         <article class="photos__card photo">
+          <h3 class="visually-hidden">Фотография пользователя</h3>
           <div class="photo__image">
             <picture>
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 960px)"
                 srcset="./img/photo-3-desktop.webp 1x, ./img/photo-3-desktop@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-3-tablet.webp 1x, ./img/photo-3-tablet@2x.webp 2x">
-              <img src="./img/photo-3-mobile.webp" srcset="./img/photo-3-mobile@2x.webp 2x">
+              <img src="./img/photo-3-mobile.webp" srcset="./img/photo-3-mobile@2x.webp 2x" alt="user-photo">
             </picture>
           </div>
           <div class="photo__wrapper">
@@ -234,12 +238,13 @@
           </div>
         </article>
         <article class="photos__card photo">
+          <h3 class="visually-hidden">Фотография пользователя</h3>
           <div class="photo__image">
             <picture>
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 960px)"
                 srcset="./img/photo-4-desktop.webp 1x, ./img/photo-4-desktop@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-4-tablet.webp 1x, ./img/photo-4-tablet@2x.webp 2x">
-              <img src="./img/photo-4-mobile.webp" srcset="./img/photo-4-mobile@2x.webp 2x">
+              <img src="./img/photo-4-mobile.webp" srcset="./img/photo-4-mobile@2x.webp 2x" alt="user-photo">
             </picture>
           </div>
           <div class="photo__wrapper">
@@ -261,12 +266,13 @@
           </div>
         </article>
         <article class="photos__card photo">
+          <h3 class="visually-hidden">Фотография пользователя</h3>
           <div class="photo__image">
             <picture>
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 960px)"
                 srcset="./img/photo-5-desktop.webp 1x, ./img/photo-5-desktop@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-5-tablet.webp 1x, ./img/photo-5-tablet@2x.webp 2x">
-              <img src="./img/photo-5-mobile.webp" srcset="./img/photo-5-mobile@2x.webp 2x">
+              <img src="./img/photo-5-mobile.webp" srcset="./img/photo-5-mobile@2x.webp 2x" alt="user-photo">
             </picture>
           </div>
           <div class="photo__wrapper">
@@ -288,12 +294,13 @@
           </div>
         </article>
         <article class="photos__card photo">
+          <h3 class="visually-hidden">Фотография пользователя</h3>
           <div class="photo__image">
             <picture>
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 960px)"
                 srcset="./img/photo-6-desktop.webp 1x, ./img/photo-6-desktop@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="./img/photo-6-tablet.webp 1x, ./img/photo-6-tablet@2x.webp 2x">
-              <img src="./img/photo-6-mobile.webp" srcset="./img/photo-6-mobile@2x.webp 2x">
+              <img src="./img/photo-6-mobile.webp" srcset="./img/photo-6-mobile@2x.webp 2x" alt="user-photo">
             </picture>
           </div>
           <div class="photo__wrapper">
@@ -318,16 +325,17 @@
     </div>
   </section>
   <div class="container-centred">
-    <section class="user-photo">
+    <form class="user-photo" action="#" method="POST">
       <h2 class="user-photo__title">Затмите их всех!
         <br>
         Выкладывайте все, что накопилось в телефоне!
       </h2>
       <div class="user-photo__wrapper">
         <picture>
-          <source media="(min-width: 1200px)" srcset="./img/photo-7-desktop.webp 1x, ./img/photo-7-desktop@2x.webp 2x">
+          <source media="(min-width: 960px)" srcset="./img/photo-7-desktop.webp 1x, ./img/photo-7-desktop@2x.webp 2x">
           <source media="(min-width: 660px)" srcset="./img/photo-7-tablet.webp 1x, ./img/photo-7-tablet@2x.webp 2x">
-          <img src="./img/photo-7-mobile.webp" srcset="./img/photo-7-mobile@2x.webp 2x" class="user-photo__image">
+          <img src="./img/photo-7-mobile.webp" srcset="./img/photo-7-mobile@2x.webp 2x" class="user-photo__image"
+            alt="your-photo">
         </picture>
         <div class="user-photo__container">
           <div class="user-photo__filters">
@@ -343,7 +351,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <div class="user-photo__filter filter">
               <div class="filter__icon filter__icon--fill">
@@ -363,7 +370,6 @@
                 <svg width="32" height="32">
                   <use xlink:href="./img/svg/sprite.svg#contrast"></use>
                 </svg>
-
               </div>
               <div class="filter__wrapper">
                 <div class="filter__rangeline">
@@ -374,12 +380,12 @@
             </div>
           </div>
           <div class="user-photo__controls">
-            <button class="user-photo__submit button-inner">Запостить</button>
-            <button class="user-photo__cancel button-inner button-inner-disabled" disabled>Отмена</button>
+            <button type="submit" class="user-photo__submit button-inner">Запостить</button>
+            <button type="reset" class="user-photo__cancel button-inner button-inner-disabled" disabled>Отмена</button>
           </div>
         </div>
       </div>
-    </section>
+    </form>
   </div>
 
   <footer class="page-footer">
@@ -481,7 +487,6 @@
           <use xlink:href="./img/svg/sprite.svg#academy"></use>
         </svg>
       </a>
-    </div>
     </div>
   </footer>
 
